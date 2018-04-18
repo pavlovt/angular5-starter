@@ -38,6 +38,27 @@ export class HomeComponent implements OnInit {
    * Set our default values
    */
   public localState = { value: '' };
+  public sampleTableData = [{
+    id: 1,
+    name: 'Valeri',
+    age: 27
+  }, {
+    id: 2,
+    name: 'Maria',
+    age: 23
+  }, {
+    id: 3,
+    name: 'Stefan',
+    age: 43
+  }];
+
+  public sampleTableCols = [{
+    label: 'Name',
+    field: 'name'
+  }, {
+    label: 'Age',
+    field: 'age'
+  }];
   /**
    * TypeScript public modifiers
    */
