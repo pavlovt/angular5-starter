@@ -22,6 +22,7 @@ import { XLargeDirective } from './home/x-large';
 import { FormModule, CommonModule, } from './shared';
 import { M1Module } from './m1/m1.module';
 import { ZzzComponent } from './home/zzz'
+import { HtmlOutlet } from './home/outlet'
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -50,6 +51,7 @@ interface StoreType {
     NoContentComponent,
     XLargeDirective,
     ZzzComponent,
+    HtmlOutlet
   ],
   /**
    * Import Angular's modules.
