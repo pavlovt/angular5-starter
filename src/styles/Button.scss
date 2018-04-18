@@ -1,0 +1,68 @@
+.save-button {
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 11px;
+    color:#ffffff;
+    border-radius: 5px;
+    background: linear-gradient(#7bb51e,#668f16);
+    border: 1px solid #668f16;
+    &:focus {
+        border: 1px solid #b4e461;
+        outline: none;
+    }
+    &:hover {
+        background: linear-gradient(#7bb51e,#7ab21d); 
+    }
+    
+}
+
+.cancel-button {
+    font-family: Verdana;
+    font-size: 11px;
+    color:#333333;
+    border-radius: 5px;
+    background: linear-gradient(#e5e5e5,#cbcbcb);
+    border: 1px solid #cbcbcb;
+    &:focus {
+        border: 1px solid #b4e461;
+        outline: none;
+    }
+    &:hover {
+        background: linear-gradient(#e5e5e5,#dedede); 
+    }
+}
+
+
+.search-button {
+    width: 23px !important;
+    color:#333333;
+    border-radius: 5px;
+    background: linear-gradient(#e5e5e5,#cbcbcb);
+    border: 1px solid #cbcbcb;
+    &:focus {
+        border: 1px solid #b4e461;
+        outline: none;
+    }
+    &:hover {
+        background: linear-gradient(#e5e5e5,#dedede); 
+    }
+
+}
+
+.ui-button {
+    height: 23px;
+    width: 65px;
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+svg:not(:root).svg-inline--fa {
+    width: 10px;
+    padding-top: 2px;
+}
+
+
+
+
+

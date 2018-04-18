@@ -6,8 +6,10 @@ import {
 import { AppState } from '../app.service';
 import { Title } from './title';
 import { XLargeDirective } from './x-large';
-import {RxApi,} from '../shared'
-console.log(RxApi)
+import {RadioButtonModule} from '../shared/prime'
+import {ButtonModule} from 'primeng/button';
+import {CalendarModule} from 'primeng/calendar';
+
 @Component({
   /**
    * The selector is what angular internally uses
@@ -31,6 +33,7 @@ console.log(RxApi)
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
+    value: Date;
   /**
    * Set our default values
    */

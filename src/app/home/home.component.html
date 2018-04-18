@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
   <h1 x-large class="sample-content">Your Content Here</h1>
 
   <hr>
@@ -22,16 +22,42 @@
         autofocus>
 
       <button>Submit Value</button>
-    </form>
-    <!--
+    </form> -->
+<!--
         <input type="text" [value]="localState.value" (input)="localState.value = $event.target.value" autofocus>
         Rather than wiring up two-way data-binding ourselves with [value] and (input)
         we can use Angular's [(ngModel)] syntax
         <input type="text" name="textInput" [(ngModel)]="localState.value" autofocus>
       -->
 
-    <pre>this.localState = {{ localState | json }}</pre>
-
+<!-- <pre>this.localState = {{ localState | json }}</pre>
   </div>
-
+</div> -->
+<br/>
+<div>
+    <h3>Radio Buttons</h3>
+    <p-radioButton name="group1" value="Option 1" label="Subscriber"></p-radioButton>
+    <p-radioButton name="group1" value="Option 2" label="Subscriber"></p-radioButton>
+    <p-radioButton name="group1" value="Option 3" label="Subscriber"></p-radioButton>
 </div>
+<br/>
+<div>
+    <h3>Buttons</h3>
+    <button pButton type="submit" label="Save" class="save-button"></button>
+    <button pButton type="button" label="Cancel" class="cancel-button"></button>
+    <button pButton type="button" label="&nbsp;" icon="fas fa-search" class="search-button"></button>
+    <button pButton type="submit" label="Save" class="save-button" [disabled]="true"></button>
+    <button pButton type="button" label="Cancel" class="cancel-button" [disabled]="true"></button>
+</div>
+<br/>
+<div>
+    <h3>Date/Time Fields</h3>
+    <div class="content-section implementation">
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-4">
+                <p-calendar [(ngModel)]="value" [showIcon]="true"></p-calendar>{{date3|date}}
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
