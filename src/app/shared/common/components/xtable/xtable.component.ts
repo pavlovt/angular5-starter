@@ -1,9 +1,7 @@
 import {
   Component,
-  Directive,
-  OnInit,
   Input,
-  ElementRef
+  OnInit
 } from '@angular/core';
 
 interface ITableCols {
@@ -11,6 +9,9 @@ interface ITableCols {
   field: string;
 }
 
+/**
+ * @XTable: A component wrapping "ngprime Table" to simplify it's creation (facade)
+ */
 @Component({
   selector: 'xtable',
   template: `
@@ -35,11 +36,11 @@ interface ITableCols {
 export class XTableComponent implements OnInit {
   @Input() cols: Array<ITableCols> = [];
   @Input() data: Array<any> = [];
+  @Input() config: object; // Properties are listed here https://www.primefaces.org/primeng/#/table
 
   constructor() { }
 
   public ngOnInit() { }
-
   public trackBy(index: number, row: any) {
     return row.id;
   }
