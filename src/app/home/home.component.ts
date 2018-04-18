@@ -6,7 +6,8 @@ import {
 import { AppState } from '../app.service';
 import { Title } from './title';
 import { XLargeDirective } from './x-large';
-
+import {RxApi,} from '../shared'
+console.log(RxApi)
 @Component({
   /**
    * The selector is what angular internally uses

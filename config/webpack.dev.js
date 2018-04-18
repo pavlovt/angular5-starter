@@ -6,14 +6,14 @@ const helpers = require('./helpers');
 const buildUtils = require('./build-utils');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
-
+// console.log('!!!!!!!!!!!!!!!!', helpers.root('./'))
 /**
  * Webpack Plugins
  */
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const EvalSourceMapDevToolPlugin = require('webpack/lib/EvalSourceMapDevToolPlugin');
-
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 /**
  * Webpack configuration
@@ -179,6 +179,18 @@ module.exports = function (options) {
       clearImmediate: false,
       setImmediate: false,
       fs: 'empty'
+    },
+
+    resolve: {
+      extensions: [".ts"],
+      plugins: [
+        new TsconfigPathsPlugin({
+          configFile: helpers.root('./')+"tsconfig.webpack.json",
+          logLevel: "info",
+          extensions: [".ts"]
+          // baseUrl: "/foo"
+        })
+      ]
     }
 
   });
