@@ -1,5 +1,4 @@
 .save-button {
-    font-family: Verdana;
     font-weight: bold;
     font-size: 11px;
     color:#ffffff;
@@ -7,17 +6,18 @@
     background: linear-gradient(#7bb51e,#668f16);
     border: 1px solid #668f16;
     &:focus {
-        border: 1px solid #b4e461;
+        border: 1px solid #b4e461 !important;
+        background: linear-gradient(#7bb51e,#668f16) !important;
+        color:#ffffff !important;
         outline: none;
     }
     &:hover {
-        background: linear-gradient(#7bb51e,#7ab21d); 
+        background: linear-gradient(#7bb51e,#7ab21d) !important; 
     }
     
 }
 
 .cancel-button {
-    font-family: Verdana;
     font-size: 11px;
     color:#333333;
     border-radius: 5px;
@@ -34,7 +34,7 @@
 
 
 .search-button {
-    width: 23px !important;
+    width: 23px;
     color:#333333;
     border-radius: 5px;
     background: linear-gradient(#e5e5e5,#cbcbcb);
