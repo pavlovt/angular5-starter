@@ -59,6 +59,9 @@ export class HomeComponent implements OnInit {
     label: 'Age',
     field: 'age'
   }];
+  public ngPrimeTableConfig = {
+    paginator: true
+  };
   /**
    * TypeScript public modifiers
    */

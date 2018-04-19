@@ -6,6 +6,7 @@ import { RxApi } from './services/rxapi'; export { RxApi };
 import { Notify } from './services/notify'; export { Notify };
 
 import { XTableComponent } from './components/xtable/xtable.component';
+import { TestComponent } from './components/tst';
 
 import { AccordionModule, AutoCompleteModule, BlockUIModule, BreadcrumbModule, ButtonModule, CalendarModule, CaptchaModule, CardModule,
   CarouselModule, ChartModule, ChipsModule, ConfirmDialogModule, CodeHighlighterModule, CheckboxModule, ColorPickerModule,
@@ -19,7 +20,7 @@ import { AccordionModule, AutoCompleteModule, BlockUIModule, BreadcrumbModule, B
 
 @NgModule({
   declarations: [
-    XTableComponent
+    XTableComponent, TestComponent,
   ],
   imports: [
     AccordionModule, AutoCompleteModule, BlockUIModule, BreadcrumbModule, ButtonModule, CalendarModule, CaptchaModule, CardModule,
@@ -46,7 +47,7 @@ import { AccordionModule, AutoCompleteModule, BlockUIModule, BreadcrumbModule, B
     TieredMenuModule, OrganizationChartModule, OverlayPanelModule, PaginatorModule, PanelModule, PasswordModule, ProgressBarModule, ProgressSpinnerModule,
     ScrollPanelModule, RadioButtonModule, RatingModule, StepsModule, SliderModule, SidebarModule, SpinnerModule, SplitButtonModule, SelectButtonModule,
     TriStateCheckboxModule, TreeModule, TableModule, ToolbarModule, TooltipModule, TerminalModule, TabViewModule, TreeTableModule, ToggleButtonModule,
-    XTableComponent
+    XTableComponent, TestComponent,
   ]
 })
 
