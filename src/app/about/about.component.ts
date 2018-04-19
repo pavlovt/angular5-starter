@@ -3,6 +3,8 @@ import {
   OnInit
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import {SelectItem} from 'primeng/api';
+import {SelectItemGroup} from 'primeng/api';
 
 @Component({
   selector: 'about',
@@ -11,13 +13,32 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './about.component.html'
 })
 export class AboutComponent implements OnInit {
+  countries: SelectItem[];
 
   public localState: any;
   constructor(
+
     public route: ActivatedRoute
   ) {}
 
   public ngOnInit() {
+    this.countries = [
+      {label: 'AFG', value: 'AFG'},
+      {label: 'ALB', value: 'ALB'},
+      {label: 'AND', value: 'AND'},
+      {label: 'AGO', value: 'AGO'},
+      {label: 'AIA', value: 'AIA'},
+      {label: 'ATA', value: 'ATA'},
+      {label: 'BHS', value: 'BGS'},
+      {label: 'BHR', value: 'BHR'},
+      {label: 'BGD', value: 'BGD'},
+      {label: 'BOL', value: 'BOL'},
+      {label: 'ATA', value: 'ATA'},
+      {label: 'BHS', value: 'BGS'},
+      {label: 'BHR', value: 'BHR'},
+      {label: 'BGD', value: 'BGD'},
+      {label: 'BOL', value: 'BOL'},
+  ];
     this.route
       .data
       .subscribe((data: any) => {

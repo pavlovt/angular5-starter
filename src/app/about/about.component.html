@@ -1,28 +1,38 @@
 <h1>About</h1>
-<br/><hr/><br/>
-    <label class="input-text-label">Input Text (onFocus)</label>
-    <div class="input-text">
-        <input type="text" pInputText placeholder="Input Text">  
-    </div>
-    <br/>
-    <label class="input-text-label">Input Text (diasbled)</label>
-    <div class="input-text">
-    <input type="text" pInputText placeholder="Input Text" disabled> 
-    </div>
-    <br/>
-    <label class="input-text-label">Input Text (required)</label>
-    <div class="input-text">
-    <input type="text" pInputText placeholder="Input Text" required> 
-    </div>   
-
-<br/><hr/><br/>
-<div>
-    For hot module reloading run
-    <pre>npm run start:hmr</pre>
+<br/>
+<hr/>
+<br/>
+<h2>Input Text</h2>
+<label class="input-text-label">Input Text (onFocus)</label>
+<div class="input-text">
+    <input type="text" pInputText placeholder="Input Text">
 </div>
-<div>
-    <h3>
-        patrick@tipe.io
-    </h3>
+<br/>
+<label class="input-text-label">Input Text (diasbled)</label>
+<div class="input-text">
+    <input type="text" pInputText placeholder="Input Text" disabled>
 </div>
-<pre>this.localState = {{ localState | json }}</pre>
+<br/>
+<label class="input-text-label">Input Text (required)</label>
+<div class="input-text">
+    <input type="text" pInputText placeholder="Input Text" required>
+</div>
+<br/>
+<hr/>
+<br/>
+<h2>Check Boxes</h2>
+<p-checkbox class="checkbox" label="CheckBox(onFocus)"></p-checkbox>
+<br>
+<p-checkbox class="checkbox" label="CheckBox(disabled)" disabled="true"></p-checkbox>
+<br/>
+<hr/>
+<br/>
+<h2>Combo Boxes</h2>
+<p-dropdown class="dropdown"[options]="countries"></p-dropdown>
+<br/>
+<hr/>
+<br/>
+<h2>Table</h2>
+<br/>
+<hr/>
+<br/>
