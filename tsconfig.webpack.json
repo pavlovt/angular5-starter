@@ -14,12 +14,11 @@
       "es2015",
       "dom"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
+      "~/*": ["src/*"],
       "@angular/*": ["node_modules/@angular/*"],
-      "src/*": ["./src/*"],
-      "shared": ["./src/shared/index"],
-      "shared/*": ["./src/shared/*"]
+      "@shared/*": ["./src/app/shared/*"]
     },
     "typeRoots": [
       "node_modules/@types"

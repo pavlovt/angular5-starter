@@ -17,7 +17,9 @@
     ],
     "baseUrl": "./src",
     "paths": {
-      "@angular/*": ["node_modules/@angular/*"]
+      "~/*": ["src/*"],
+      "@angular/*": ["node_modules/@angular/*"],
+      "@shared/*": ["./src/app/shared/*"]
     },
     "typeRoots": [
       "node_modules/@types"
