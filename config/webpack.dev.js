@@ -146,6 +146,7 @@ module.exports = function (options) {
       hot: METADATA.HMR,
       public: METADATA.PUBLIC,
       historyApiFallback: true,
+      open: false,
       watchOptions: {
         // if you're using Docker you may need this
         // aggregateTimeout: 300,
