@@ -4,6 +4,9 @@ import {
   ElementRef,
   Renderer
 } from '@angular/core';
+
+import { AppState } from 'app/app.service';
+import {RxApi,Notify,} from 'app/shared'
 /**
  * Directive
  * XLarge is a simple directive to show how one is made
@@ -14,7 +17,9 @@ import {
 export class XLargeDirective {
   constructor(
     public element: ElementRef,
-    public renderer: Renderer
+    public renderer: Renderer,
+    public ser: AppState,
+    public api: RxApi,
   ) {
     /**
      * Simple DOM manipulation to set font size to x-large
