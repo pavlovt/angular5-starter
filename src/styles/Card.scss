@@ -1,0 +1,69 @@
+.ui-card-shadow {
+    background-color: #f1f1f1;
+    position: relative;
+    width: 320px;
+}
+
+.box-button {
+    width: 14px;
+    height: 14px;
+    color:#818181;
+    border: 1px solid #818181;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+
+.ui-card-body {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 5px;
+}
+
+.card-content {
+    background-color: #f8f8f8;
+    text-shadow: #f8f8f803 0 0 1px;
+    border: 1px solid #e6e6e6;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    padding-right: 15px;
+}
+
+.ok-button {
+    font-weight: bold;
+    color:#ffffff;
+    border-radius: 4px;
+    background: linear-gradient(#7bb51e,#668f16);
+    border: 1px solid #668f16;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    &:hover {
+        background: linear-gradient(#7bb51e,#7ab21d) !important; 
+    }
+    &:focus {
+        border: 1px solid #b4e461;
+        background: linear-gradient(#7bb51e,#668f16) !important;
+        color:#ffffff !important;
+        outline: none;
+    }
+}
+
+.ui-card-footer {
+    height: 40px;
+}
+
+.ui-card-header {
+    height: 20px;
+}
+
+.header-msg {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+
+
+

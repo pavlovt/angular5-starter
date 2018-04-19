@@ -9,6 +9,9 @@ import { XLargeDirective } from './x-large';
 import {RadioButtonModule} from '../shared/prime'
 import {ButtonModule} from 'primeng/button';
 import {CalendarModule} from 'primeng/calendar';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import {MessageModule} from 'primeng/message';
+import {CardModule} from 'primeng/card';
 
 @Component({
   /**

@@ -1,12 +1,12 @@
 $fontFamily: "Verdana", Arial, sans-serif;
-$fontSize: 1em;
+$fontSize: 11px;
 $borderRadius: 3px;
 $disabledOpacity: 0.5;
 
 //Header
 $headerBorderWidth: 1px;
 $headerBorderColor: #d9d9d9;
-$headerBgColor: #f6f7f9;
+$headerBgColor: #d9d9d9;
 $headerTextColor: #1b1d1f;
 $headerFontWeight: normal;
 $headerIconTextColor: #1b1d1f;
@@ -19,7 +19,7 @@ $contentTextColor: #222222;
 
 //Default State
 $stateDefaultBorderWidth: 1px;
-$stateDefaultBorderColor: #d6d6d6;
+$stateDefaultBorderColor: #7f7f7f;
 $stateDefaultBgColor: #ffffff;
 $stateDefaultTextColor: #555555;
 
@@ -50,7 +50,7 @@ $stateHoverTextColor: none;
 
 //Forms
 $inputBgColor: #ffffff;
-$inputTextColor: #222222;
+$inputTextColor: #4c4c4c;
 $invalidInputBorderColor: #f44336;
 $inputGroupTextColor: #222222;
 

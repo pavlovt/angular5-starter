@@ -1,0 +1,31 @@
+.ui-datepicker td span, .ui-datepicker td a {
+    border: none;
+    padding-top: 6px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    &:hover {
+        background-color: #d9d9d9 !important;
+    }
+    &:active {
+        background-color: #ace153 !important;
+    }
+}
+
+.ui-datepicker th {
+    background: #d9d9d9;
+    font-weight: 100;
+}
+
+.ui-datepicker {
+    border: 1px solid #7f7f7f;
+}
+
+.ui-fluid .ui-calendar.ui-calendar-w-btn .ui-inputtext {
+    width: calc(40% - 2em);
+    &:focus {
+        border: 1px solid #7f7f7f;
+    }
+}
+
+
