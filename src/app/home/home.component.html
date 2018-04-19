@@ -45,24 +45,23 @@
   </div>
 </div> -->
 <zzz attr.z='qq'></zzz>
-<br/>
+<hr>
 <div>
     <h3>Radio Buttons</h3>
     <p-radioButton name="group1" value="Option 1" label="Subscriber"></p-radioButton>
     <p-radioButton name="group1" value="Option 2" label="Subscriber"></p-radioButton>
-    <p-radioButton name="group1" value="Option 3" label="Subscriber"></p-radioButton>
-    <p-radioButton name="group1" value="Option 3" label="Subscriber"></p-radioButton>
+    <p-radioButton name="group1" value="Option 3" label="Subscriber" [disabled]="true"></p-radioButton>
 </div>
-<br/>
+<hr>
 <div>
     <h3>Buttons</h3>
     <button pButton type="submit" label="Save" class="save-button"></button>
     <button pButton type="button" label="Cancel" class="cancel-button"></button>
-    <button pButton type="button" icon="fas fa-search" class="search-button"></button>
+    <button pButton type="button" icon="fas fa-search mini" class="search-button"></button>
     <button pButton type="submit" label="Save" class="save-button" [disabled]="true"></button>
     <button pButton type="button" label="Cancel" class="cancel-button" [disabled]="true"></button>
 </div>
-<br/>
+<hr>
 <div>
     <h3>Date/Time Fields</h3>
     <div class="content-section implementation">
@@ -72,5 +71,35 @@
             </div>
         </div>
     </div>
+</div>
+<hr>
+<div>
+    <h3>Data Loading Indicator</h3>
+    <div class="spiner">
+        <div id="floatingCirclesG">
+            <div class="f_circleG" id="frotateG_01"></div>
+            <div class="f_circleG" id="frotateG_02"></div>
+            <div class="f_circleG" id="frotateG_03"></div>
+            <div class="f_circleG" id="frotateG_04"></div>
+            <div class="f_circleG" id="frotateG_05"></div>
+            <div class="f_circleG" id="frotateG_06"></div>
+            <div class="f_circleG" id="frotateG_07"></div>
+            <div class="f_circleG" id="frotateG_08"></div>
+        </div>
+        <p-message severity="warn" text="Loading Data..."></p-message>
+    </div>
+</div>
+<hr>
+<div>
+    <h3>Message Box</h3>
+    <p-card styleClass="ui-card-shadow">
+        <p-header>
+            <div class="header-msg">Patient Selection</div><button pButton type="button" (click)="count()" icon="fa-close" class="box-button"></button>
+        </p-header>
+        <div class="card-content">No patient was found with Patient Number 1234!</div>
+        <p-footer>
+            <button pButton type="submit" label="OK" class="ok-button"></button>
+        </p-footer>
+    </p-card>
 </div>
 <hr>

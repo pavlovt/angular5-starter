@@ -1,12 +1,11 @@
 .save-button {
     font-weight: bold;
-    font-size: 11px;
     color:#ffffff;
-    border-radius: 5px;
+    border-radius: 4px;
     background: linear-gradient(#7bb51e,#668f16);
     border: 1px solid #668f16;
     &:focus {
-        border: 1px solid #b4e461 !important;
+        border: 1px solid #b4e461;
         background: linear-gradient(#7bb51e,#668f16) !important;
         color:#ffffff !important;
         outline: none;
@@ -14,37 +13,51 @@
     &:hover {
         background: linear-gradient(#7bb51e,#7ab21d) !important; 
     }
+    &:disabled {
+        background: linear-gradient(#7bb51e,#668f16) !important;
+    }
+    &::first-letter {
+        text-decoration: underline;
+    }
     
 }
 
 .cancel-button {
-    font-size: 11px;
     color:#333333;
-    border-radius: 5px;
+    border-radius: 4px;
     background: linear-gradient(#e5e5e5,#cbcbcb);
     border: 1px solid #cbcbcb;
     &:focus {
         border: 1px solid #b4e461;
+        background: linear-gradient(#e5e5e5,#dedede) !important;
+        color:#333333 !important;
         outline: none;
     }
     &:hover {
-        background: linear-gradient(#e5e5e5,#dedede); 
+        background: linear-gradient(#e5e5e5,#dedede) !important; 
+    }
+    &:disabled {
+        background: linear-gradient(#e5e5e5,#cbcbcb) !important;
+    }
+    &::first-letter {
+        text-decoration: underline;
     }
 }
 
 
 .search-button {
-    width: 23px;
+    width: 23px !important;
     color:#333333;
-    border-radius: 5px;
+    border-radius: 4px;
     background: linear-gradient(#e5e5e5,#cbcbcb);
     border: 1px solid #cbcbcb;
     &:focus {
         border: 1px solid #b4e461;
+        background: linear-gradient(#e5e5e5,#dedede) !important;
         outline: none;
     }
     &:hover {
-        background: linear-gradient(#e5e5e5,#dedede); 
+        background: linear-gradient(#e5e5e5,#dedede) !important; 
     }
 
 }
@@ -56,13 +69,3 @@
         opacity: 0.5;
     }
 }
-
-svg:not(:root).svg-inline--fa {
-    width: 10px;
-    padding-top: 2px;
-}
-
-
-
-
-
