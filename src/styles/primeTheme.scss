@@ -2,6 +2,12 @@ $fontFamily: "Verdana", Arial, sans-serif;
 $fontSize: 11px;
 $borderRadius: 3px;
 $disabledOpacity: 0.5;
+//Table
+//header
+$tableHeaderBgColor:linear-gradient(#323232, #656565);
+$tableHeaderColor: #ffffff;
+//body
+$tableBorderColor:#4c4c4c;
 
 //Header
 $headerBorderWidth: 1px;
@@ -665,9 +671,9 @@ $inputGroupTextColor: #222222;
 .ui-table {
     .ui-table-thead > tr > th,
     .ui-table-tfoot > tr > td {
-        background: $headerBgColor;
-        border: 1px solid $headerBorderColor;
-        color: $headerTextColor;
+        background: $tableHeaderBgColor;
+        border: 1px solid $tableBorderColor;
+        color: $tableHeaderColor;
     }
 
     .ui-table-tbody > tr {
@@ -675,7 +681,7 @@ $inputGroupTextColor: #222222;
         color: $contentTextColor;
 
         > td {
-            border: 1px solid $contentBorderColor;
+            border: 1px solid $tableBorderColor;
             background: inherit;
         }
 

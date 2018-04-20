@@ -1,0 +1,20 @@
+.table-serach {
+  .ui-table table {
+    table-layout: auto;
+    .ui-table-thead > tr > th {
+      padding-left: 25px;
+      text-align: left;
+    }
+    .ui-table-tbody > tr {
+      border: 1px solid black;
+      &:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      > td {
+        font-family: Helvetica;
+        border: none;
+        padding-left: 20px;
+      }
+    }
+  }
+}
