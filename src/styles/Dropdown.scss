@@ -1,6 +1,8 @@
 .dropdown {
   color: #4c4c4c;
   .ui-dropdown-panel {
+    left: -1px !important;
+    box-sizing: content-box;
     .ui-dropdown-list {
       padding: 0;
       .ui-dropdown-item {
@@ -13,7 +15,7 @@
     }
   }
   .ui-widget-content {
-     border-color:#7f7f7f;
+    border-color: #7f7f7f;
     background: #ffffff;
     color: #222222;
   }
@@ -25,8 +27,8 @@
     background: #eaeaea;
     color: #4c4c4c;
   }
-  .ui-shadow{
-    box-shadow:none;
-    top: 19px!important;
-}
+  .ui-shadow {
+    box-shadow: none;
+    top: 19px !important;
+  }
 }

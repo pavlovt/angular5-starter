@@ -1,7 +1,6 @@
 <h1>About</h1>
 <br/>
 <hr/>
-<br/>
 <h2>Input Text</h2>
 <label class="input-text-label">Input Text (onFocus)</label>
 <div class="input-text">
@@ -19,26 +18,22 @@
 </div>
 <br/>
 <hr/>
-<br/>
 <h2>Check Boxes</h2>
 <p-checkbox class="checkbox" label="CheckBox(onFocus)"></p-checkbox>
 <br>
 <p-checkbox class="checkbox" label="CheckBox(disabled)" disabled="true"></p-checkbox>
 <br/>
-<hr/>
 <br/>
+<hr/>
 <h2>Combo Boxes</h2>
-<p-dropdown class="dropdown"[options]="countries"></p-dropdown>
+<p-dropdown class="dropdown" [options]="countries"></p-dropdown>
+<br/>
 <br/>
 <hr/>
-<br/>
 <h2>Table</h2>
-<br/>
-<hr/>
-<br/>
-<h3 class="first">Basic</h3>
-<p-table class="table-serach"[value]="cars">
+<p-table class="table-serach" [value]="cars">
     <ng-template pTemplate="header">
+        
         <tr>
             <th>Field Name</th>
             <th>Search For</th>
@@ -51,3 +46,6 @@
         </tr>
     </ng-template>
 </p-table>
+<br/>
+<br/>
+<hr/>

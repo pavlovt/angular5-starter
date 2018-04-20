@@ -1,5 +1,6 @@
 .table-serach {
   .ui-table table {
+    margin: 50px;
     table-layout: auto;
     .ui-table-thead > tr > th {
       padding-left: 25px;
@@ -17,4 +18,8 @@
       }
     }
   }
+}
+
+.ui-widget {
+  padding-bottom: 10px;
 }
