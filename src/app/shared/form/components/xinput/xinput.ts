@@ -8,10 +8,11 @@ declare var $;
     templateUrl: './xinput.html'
 })
 export class XInput implements OnInit {
-    
+
+    ctrl: any;
+    isFirst: boolean = false;
     @Input() name: string;
     @Input() label: string = '';
-    @Input() tooltip?: string = '';
     @Input() placeholder: string = '';
     @Input() type: string = 'text';
     @Input() id: string;
@@ -19,10 +20,41 @@ export class XInput implements OnInit {
     @Input() labelClass = '';
     @Input() maxLenght: number = 9999;
     @Input() isDisabled: boolean = false;
-    
-    constructor() {}
+
+    constructor(
+        private el: ElementRef,
+        // private change: ChangeDetectorRef,
+    ) { }
 
     ngOnInit() {
-             
+        this.id = this.id || 'form-' + this.name;
+    }
+
+    ngOnChanges(changes) {
+        this.ctrl = this.form && this.form.formGroup.controls[this.name] || {};
+        // console.log(changes, this.ctrl);
+        if (_.get(changes, 'isDisabled.currentValue') === true) {
+            this.ctrl.disable && this.ctrl.disable();
+        } else {
+            this.ctrl.enable && this.ctrl.enable();
+        }
+    }
+
+    ngAfterContentInit() {
+        let getTypeOfForm = $(this.el.nativeElement).closest("form");
+
+        let input = $('input', getTypeOfForm).first();
+        this.isFirst = $(input).attr('name') === this.name;
+
+        if (getTypeOfForm && getTypeOfForm.hasClass("form-inline")) {
+            this.labelClass = '';
+            // this.change.detectChanges();
+        }
+    }
+
+    onVisible(event) {
+        if (event.value === true && this.isFirst) {
+            $(event.target).focus();
+        }
     }
 }
