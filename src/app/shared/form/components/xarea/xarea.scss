@@ -1,0 +1,39 @@
+.input-text {
+    input {
+      &:focus {
+        border-width: 2px;
+      }
+      &:disabled {
+        background-color: #e5e5e5;
+        opacity: 1;
+        &::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #7f7f7f;
+        }
+        &::-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #7f7f7f;
+        }
+        &::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #7f7f7f;
+        }
+        &::-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: #7f7f7f;
+        }
+      }
+      &:required {
+        background-color: #cfe8f7;
+      }
+    }
+        .ui-corner-all {
+          border-radius: 0;
+        }
+  }
+  
+  .input-text-label {
+    font-size: 11px;
+    color: #4c4c4c;
+  }
+  

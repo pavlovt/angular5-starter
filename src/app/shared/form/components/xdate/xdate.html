@@ -1,0 +1,6 @@
+<div class="form-group" [formGroup]="form.getForm()" id="xcheckbox-custom">
+    <p-calendar [(ngModel)]="value" [showIcon]="true" [id]="id" [formControlName]="name"></p-calendar>{{date3|date}}
+    <div *ngIf="form.hasError(name)" class="alert alert-danger pull-right">
+        {{form.getError(name)}}
+    </div>
+</div>

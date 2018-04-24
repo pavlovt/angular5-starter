@@ -3,12 +3,12 @@ import * as _ from 'lodash';
 // declare var $;
 
 @Component({
-    selector: 'xinput',
-    styleUrls: ['./xinput.scss'],
-    templateUrl: './xinput.html'
+    selector: 'xeditor',
+    styleUrls: ['./xeditor.scss'],
+    templateUrl: './xeditor.html'
 })
-export class XInput implements OnInit {
-
+export class XEditor implements OnInit {
+    text: string;
     ctrl: any;
     @Input() name: string;
     @Input() label: string = '';

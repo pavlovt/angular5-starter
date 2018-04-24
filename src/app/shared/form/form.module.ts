@@ -8,11 +8,21 @@ import { AutoCompleteModule, ButtonModule, CalendarModule, CaptchaModule, Checkb
   SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule } from '../prime';
 import { XInput } from './components/xinput/xinput'; export { XInput };
 import { XPassword } from './components/xpassword/xpassword'; export { XPassword };
+import { XArea } from './components/xarea/xarea'; export { XArea };
+import { XCheckbox } from './components/xcheckbox/xcheckbox'; export { XCheckbox };
+import { XMultiSelect } from './components/xmultiselect/xmultiselect'; export { XMultiSelect };
+import { XDate } from './components/xdate/xdate'; export { XDate };
+import { XEditor } from './components/xeditor/xeditor'; export { XEditor };
 
 @NgModule({
   declarations: [
     XInput,
-    XPassword
+    XPassword,
+    XArea,
+    XCheckbox,
+    XMultiSelect,
+    XDate,
+    XEditor
   ],
   imports: [
     AutoCompleteModule, ButtonModule, CalendarModule, CaptchaModule, CheckboxModule, ColorPickerModule, 
@@ -29,7 +39,12 @@ import { XPassword } from './components/xpassword/xpassword'; export { XPassword
     SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule,
 
     XInput,
-    XPassword
+    XPassword,
+    XArea,
+    XCheckbox,
+    XMultiSelect,
+    XDate,
+    XEditor
   ]
 })
 

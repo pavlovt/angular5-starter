@@ -3,11 +3,11 @@ import * as _ from 'lodash';
 // declare var $;
 
 @Component({
-    selector: 'xinput',
-    styleUrls: ['./xinput.scss'],
-    templateUrl: './xinput.html'
+    selector: 'xarea',
+    styleUrls: ['./xarea.scss'],
+    templateUrl: './xarea.html'
 })
-export class XInput implements OnInit {
+export class XArea implements OnInit {
 
     ctrl: any;
     @Input() name: string;

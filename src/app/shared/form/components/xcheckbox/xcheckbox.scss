@@ -1,0 +1,17 @@
+.checkbox {
+    .ui-chkbox {
+      margin: 0;
+      .ui-chkbox-box {
+        width: 12px;
+        height: 12px;
+        background: #ffffff;
+        border-radius: 0;
+      }
+      .ui-state-disabled {
+        color: #efefef;
+      }
+    }
+    .ui-label-disabled {
+      color: #cccccc;
+    }
+  }

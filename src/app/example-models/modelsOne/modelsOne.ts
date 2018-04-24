@@ -14,7 +14,11 @@ export class ModelsOne implements OnInit {
     ngOnInit() {
         this.form = new ValidationManager({
             'email': 'required|email',
-            'username': 'required'
+            'name': 'required',
+            'text': 'required',
+            'checkbox': 'required',
+            'date': 'required',
+            'select': 'required'
         });
 
     }
