@@ -1,3 +1,10 @@
-<div class="models-wrapper">
-    <xpassword></xpassword>
+<div class="container p-5">
+    <h1>Models Part Two</h1>
+    <form [formGroup]="form.getForm()">
+        <h2>XPassword</h2>
+        <xpassword name="password" label="Password" [form]="form"></xpassword>
+        <h2>XDropdown</h2>
+        <xdropdown [displayFirst]="false" [data]="arr" [form]="form"></xdropdown>
+    </form>
+    <xmask></xmask>
 </div>

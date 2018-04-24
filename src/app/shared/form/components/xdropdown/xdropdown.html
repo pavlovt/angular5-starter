@@ -1,0 +1,6 @@
+<div [formGroup]="form.getForm()">
+    <p-dropdown  [placeholder]="placeholder"  class="dropdown" [options]="data" [name]="name" [autoDisplayFirst]="displayFirst" [disabled]="disabled"></p-dropdown>
+    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)">
+        {{form.getError(name)}}
+    </div>
+</div>
