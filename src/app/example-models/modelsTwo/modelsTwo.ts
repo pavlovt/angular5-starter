@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'models-two',
-  template: `
-    <h1>pavlina</h1>
-  `
+  templateUrl: './modelsTwo.html',
+  styleUrls: ['./modelsTwo.scss']
 })
-export class ModelsTwo {}
+export class ModelsTwo {
+  
+}

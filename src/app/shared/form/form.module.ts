@@ -5,10 +5,12 @@ import { AutoCompleteModule, ButtonModule, CalendarModule, CaptchaModule, Checkb
   InputTextareaModule, MultiSelectModule, PasswordModule, ProgressBarModule, ProgressSpinnerModule, RadioButtonModule, RatingModule, 
   SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule } from '../prime';
 import { XInput } from './components/xinput/xinput'; export { XInput };
+import { XPassword } from './components/xpassword/xpassword'; export { XPassword };
 
 @NgModule({
   declarations: [
-    XInput
+    XInput,
+    XPassword
   ],
   imports: [
     AutoCompleteModule, ButtonModule, CalendarModule, CaptchaModule, CheckboxModule, ColorPickerModule, 
@@ -23,7 +25,8 @@ import { XInput } from './components/xinput/xinput'; export { XInput };
     InputTextareaModule, MultiSelectModule, PasswordModule, ProgressBarModule, ProgressSpinnerModule, RadioButtonModule, RatingModule, 
     SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule,
 
-    XInput
+    XInput,
+    XPassword
   ]
 })
 
