@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ValidationManager } from './../../shared/form/services/validation-manager';
+import { ValidationManager } from 'app/shared/form/services/validation-manager';
 
 @Component({
     selector: 'models-one',
@@ -14,7 +14,7 @@ export class ModelsOne implements OnInit {
     ngOnInit() {
         this.form = new ValidationManager({
             'email': 'required|email',
-            'username': 'required|username'
+            'username': 'required'
         });
 
     }

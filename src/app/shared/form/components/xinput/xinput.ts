@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ElementRef, ChangeDetectorRef } from '@angular/core';
-import _ from 'lodash';
-declare var $;
+import * as _ from 'lodash';
+// declare var $;
 
 @Component({
     selector: 'xinput',
@@ -19,7 +19,7 @@ export class XInput implements OnInit {
     @Input() form: any = {};
     @Input() labelClass = '';
     @Input() maxLenght: number = 9999;
-    @Input() isDisabled: boolean = false;
+    @Input() disabled: boolean = false;
 
     constructor(
         private el: ElementRef,
@@ -33,7 +33,7 @@ export class XInput implements OnInit {
     ngOnChanges(changes) {
         this.ctrl = this.form && this.form.formGroup.controls[this.name] || {};
         // console.log(changes, this.ctrl);
-        if (_.get(changes, 'isDisabled.currentValue') === true) {
+        if (_.get(changes, 'disabled.currentValue') === true) {
             this.ctrl.disable && this.ctrl.disable();
         } else {
             this.ctrl.enable && this.ctrl.enable();
@@ -41,20 +41,8 @@ export class XInput implements OnInit {
     }
 
     ngAfterContentInit() {
-        let getTypeOfForm = $(this.el.nativeElement).closest("form");
-
-        let input = $('input', getTypeOfForm).first();
-        this.isFirst = $(input).attr('name') === this.name;
-
-        if (getTypeOfForm && getTypeOfForm.hasClass("form-inline")) {
-            this.labelClass = '';
-            // this.change.detectChanges();
-        }
     }
 
     onVisible(event) {
-        if (event.value === true && this.isFirst) {
-            $(event.target).focus();
-        }
     }
 }

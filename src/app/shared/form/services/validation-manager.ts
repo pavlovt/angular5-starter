@@ -1,6 +1,6 @@
 import {FormGroup, FormControl, FormArray, ValidatorFn} from "@angular/forms";
 import {Validators} from "./validators";
-import _ from 'lodash';
+import * as _ from 'lodash';
 
 export class ValidationManager {
 
