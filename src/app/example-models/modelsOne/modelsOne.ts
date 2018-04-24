@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'models-one',
-  template: `
-    <h1>stoil</h1>
-  `
+  styleUrls: [ './modelsOne.scss' ],
+  templateUrl: './modelsOne.html'
 })
 export class ModelsOne {}
