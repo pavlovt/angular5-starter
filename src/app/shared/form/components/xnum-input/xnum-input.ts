@@ -1,24 +1,20 @@
-import { Component, OnInit, Input, ViewEncapsulation } from "@angular/core";
-import * as _ from "lodash";
+import { Component, ViewEncapsulation, Input } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
-  selector: "xpassword",
-  styleUrls: ["./xpassword.scss"],
-  templateUrl: "./xpassword.html",
+  selector: 'xnum-input',
+  templateUrl: './xnum-input.html',
+  styleUrls: ['./xnum-input.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class XPassword implements OnInit {
+export class XNumInput {
   ctrl: any;
   @Input() name: string;
-  @Input() label: string = "";
-  @Input() placeholder: string = "";
-  @Input() type: string = "text";
   @Input() id: string;
   @Input() form: any = {};
-  @Input() labelClass = "";
-  @Input() maxLenght: number = 9999;
-  @Input() disabled: boolean = false;
-  @Input() showFeedback: boolean = false;
+  @Input() min:number;
+  @Input() max:number;
+  @Input() step:number;
 
   ngOnInit() {
     this.id = this.id || "form-" + this.name;

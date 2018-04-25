@@ -1,1 +1,14 @@
-<p-inputMask [mask]="maskType" [placeholder]="maskExample[0]" slotChar="mm/dd/yyyy"></p-inputMask>
+<div [formGroup]="form.getForm()">
+        <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
+    <p-inputMask 
+        [id]="id" 
+        [name]="name"  
+        [formControlName]="name" 
+        [mask]="maskTypes[mask].maskType"
+        [placeholder]="maskTypes[mask].maskType" 
+       >
+    </p-inputMask>
+    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)"  class="alert alert-danger">
+            {{form.getError(name)}}
+        </div>
+</div>

@@ -1,0 +1,6 @@
+<div [formGroup]="form.getForm()">
+  <p-spinner size="30" [min]="min" [max]="max" [step]="step" [formControlName]="name" [id]="id" [name]="name" ></p-spinner>
+  <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
+      {{form.getError(name)}}
+  </div>
+</div>

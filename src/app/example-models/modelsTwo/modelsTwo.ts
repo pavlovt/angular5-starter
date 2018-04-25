@@ -9,6 +9,7 @@ import { SelectItem } from "app/shared/prime";
 })
 export class ModelsTwo {
   form;
+  data: any[] = ['Audi','BMW','Fiat','Ford','Honda','Jaguar','Mercedes','Renault','Volvo','VW'];
   arr = [
     { label: "AFG", value: "AFG"},
     { label: "ALB", value: "ALB" },
@@ -29,7 +30,12 @@ export class ModelsTwo {
 
   ngOnInit() {
     this.form = new ValidationManager({
-      password: "required|rangeLength:6,30"
+      password: "required|rangeLength:6,30",
+      mask: "required|rangeLength:2,15",
+      auto: 'required',
+      dropdown: 'required',
+      xradio: 'required',
+      xnumInput: 'required'
     });
   }
 }

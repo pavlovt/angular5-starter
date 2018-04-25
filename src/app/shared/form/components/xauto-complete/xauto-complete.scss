@@ -1,0 +1,15 @@
+.custom-autocomplete {
+  .ui-autocomplete { 
+    .ui-autocomplete-dropdown {
+      height: 24px;
+      border-radius: 0;
+    }
+    .ui-autocomplete-input {
+   border: 1px solid #7f7f7f;
+   border-radius: 0;
+ }
+}
+  .ui-inputtext {
+    border: none;
+  }
+}

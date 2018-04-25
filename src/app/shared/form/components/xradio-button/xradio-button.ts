@@ -1,30 +1,26 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import * as _ from 'lodash';
 
-@Component({
-    selector: 'xinput',
-    styleUrls: ['./xinput.scss'],
-    templateUrl: './xinput.html',
-    encapsulation: ViewEncapsulation.None
-})
-export class XInput implements OnInit {
 
+@Component({
+selector: 'xradio-button',
+templateUrl: './xradio-button.html',
+styleUrls: ['./xradio-button.scss'],
+encapsulation: ViewEncapsulation.None
+})
+export class XRadioButton {
     ctrl: any;
-    isFirst: boolean = false;
-    @Input() name: string;
-    @Input() label: string = '';
-    @Input() placeholder: string = '';
-    @Input() type: string = 'text';
     @Input() id: string;
+    @Input() name?: string;
+    @Input() label?: string = '';
     @Input() form: any = {};
-    @Input() labelClass = '';
-    @Input() maxLenght: number = 9999;
-    @Input() disabled: boolean = false;
+    @Input() isDisabled:boolean;
 
     ngOnInit() {
         this.id = this.id || 'form-' + this.name;
     }
 
+  
     ngOnChanges(changes) {
         this.ctrl = this.form && this.form.formGroup.controls[this.name] || {};
         // console.log(changes, this.ctrl);

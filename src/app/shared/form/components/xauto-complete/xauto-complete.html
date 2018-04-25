@@ -1,0 +1,16 @@
+<div class="custom-autocomplete"  [formGroup]="form.getForm()">
+    <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
+    <p-autoComplete 
+        pInputText 
+        [type]="type" 
+        [suggestions]="filteredData" 
+        (completeMethod)="filterData($event)" 
+        [placeholder]
+        [formControlName]="name"
+        dropdown="showDropdown">
+    </p-autoComplete>
+   
+    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger pull-right">
+            {{form.getError(name)}}
+        </div>
+</div>
