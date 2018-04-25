@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, ElementRef, ChangeDetectorRef } from '@angular/core';
 import * as _ from 'lodash';
-// declare var $;
-
+// import {Quill} from "quill";
 @Component({
     selector: 'xeditor',
     styleUrls: ['./xeditor.scss'],

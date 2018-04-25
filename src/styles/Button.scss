@@ -1,7 +1,7 @@
 .ui-button-primary {
     font-weight: bold;
     color:#ffffff;
-    border-radius: 4px;
+    border-radius: 4px !important;
     background: linear-gradient(#7bb51e,#668f16);
     border: 1px solid #668f16;
     &:focus {
@@ -24,7 +24,7 @@
 
 .ui-button-secondary {
     color:#333333;
-    border-radius: 4px;
+    border-radius: 4px !important;
     background: linear-gradient(#e5e5e5,#cbcbcb);
     border: 1px solid #cbcbcb;
     &:focus {
@@ -48,7 +48,7 @@
 .mini-button {
     width: 23px !important;
     color:#333333;
-    border-radius: 4px;
+    border-radius: 4px !important;
     background: linear-gradient(#e5e5e5,#cbcbcb);
     border: 1px solid #cbcbcb;
     &:focus {

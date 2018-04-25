@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { AutoCompleteModule, ButtonModule, CalendarModule, CaptchaModule, CheckboxModule, ColorPickerModule, 
   DropdownModule, FieldsetModule, FileUploadModule, InplaceModule, InputMaskModule, InputTextModule, InputSwitchModule, 
   InputTextareaModule, MultiSelectModule, PasswordModule, ProgressBarModule, ProgressSpinnerModule, RadioButtonModule, RatingModule, 
-  SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule } from '../prime';
+  SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule, EditorModule } from '../prime';
 import { XInput } from './components/xinput/xinput'; export { XInput };
 import { XPassword } from './components/xpassword/xpassword'; export { XPassword };
 import { XArea } from './components/xarea/xarea'; export { XArea };
@@ -29,14 +29,14 @@ import { XEditor } from './components/xeditor/xeditor'; export { XEditor };
     DropdownModule, FieldsetModule, FileUploadModule, InplaceModule, InputMaskModule, InputTextModule, InputSwitchModule, 
     InputTextareaModule, MultiSelectModule, PasswordModule, ProgressBarModule, ProgressSpinnerModule, RadioButtonModule, RatingModule, 
     SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule,
-    ReactiveFormsModule, FormsModule, CommonModule,
+    ReactiveFormsModule, FormsModule, CommonModule, EditorModule,
   ],
   providers: [],
   exports: [
     AutoCompleteModule, ButtonModule, CalendarModule, CaptchaModule, CheckboxModule, ColorPickerModule, 
     DropdownModule, FieldsetModule, FileUploadModule, InplaceModule, InputMaskModule, InputTextModule, InputSwitchModule, 
     InputTextareaModule, MultiSelectModule, PasswordModule, ProgressBarModule, ProgressSpinnerModule, RadioButtonModule, RatingModule, 
-    SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule,
+    SplitButtonModule, SelectButtonModule, TriStateCheckboxModule, ToggleButtonModule, EditorModule,
 
     XInput,
     XPassword,
