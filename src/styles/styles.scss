@@ -10,12 +10,9 @@
 @import './RadioButton';
 @import './Button';
 
-@import './Calendar';
 @import './ProgressSpiner';
 @import './Card';
 
-@import './InputText';
-@import './Checkbox';
 @import './Dropdown';
 @import './TurboTable';
 
@@ -41,6 +38,16 @@ nav a {
 label {
     font-family: "Verdana", Arial, sans-serif;
     font-size: 11px;
+}
+
+.alert-danger {
+    color: #dc3545;
+    font-size: 11px;
+    font-family: Verdana;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    background-color: #ffffff00; 
+    border-color: #ffffff00; 
 }
 
 

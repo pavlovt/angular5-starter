@@ -1,11 +1,6 @@
 <div class="form-group" [formGroup]="form.getForm()" id="xcheckbox-custom">
-    <label for="{{id}}" [class.disabled-label]="disabled" [style.color]="color">
-        <p-checkbox class="form-control" id="{{id}}" name="{{name}}" [formControlName]="name"></p-checkbox>
-        <span (click)="toggleCheckForm($event)" [class.disabled-checkbox]="disabled" [style.backgroundColor]="color" class="check-mark">
-        </span>
-        <span (click)="toggleCheckForm($event)" class="xlabel">{{label}}</span>
-    </label>
-    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger pull-right">
+    <p-checkbox label="Subscriber" class="form-control" id="{{id}}" name="{{name}}" [formControlName]="name"></p-checkbox>
+    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
         {{form.getError(name)}}
     </div>
 </div>
