@@ -1,11 +1,12 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, ViewEncapsulation } from '@angular/core';
 import * as _ from 'lodash';
 
 
 @Component({
     selector: 'xcheckbox',
     styleUrls: ['./xcheckbox.scss'],
-    templateUrl: './xcheckbox.html'
+    templateUrl: './xcheckbox.html',
+    encapsulation: ViewEncapsulation.None
 })
 export class XCheckbox implements OnInit {
     @Input() name: string;
@@ -15,7 +16,6 @@ export class XCheckbox implements OnInit {
     @Input() disabled?: boolean;
     @Input() value?: boolean;
     @Input() form?: any;
-    @Output() changed = new EventEmitter();
     ctrl: any = {};
 
     constructor(
@@ -37,21 +37,4 @@ export class XCheckbox implements OnInit {
         }
     }
 
-    private toggleCheck(event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        this.value = !this.value;
-        this.changed.emit(this.value);
-    }
-
-    private toggleCheckForm(event) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        this.value = !this.value;
-        // console.log(this.name, this.value)
-        // set the opposite value
-        this.form.setValue(this.name, this.value);
-    }
 }

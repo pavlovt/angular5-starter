@@ -1,4 +1,4 @@
-.checkbox {
+  .checkbox {
     .ui-chkbox {
       margin: 0;
       .ui-chkbox-box {
@@ -14,4 +14,13 @@
     .ui-label-disabled {
       color: #cccccc;
     }
+  }
+
+  .ng-star-inserted .ui-chkbox-label .ui-label-active {
+    margin-bottom: 0px !important;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: 0;
   }
