@@ -3,6 +3,7 @@
  */
 
 const helpers = require('./helpers');
+const webpack = require('webpack');
 
 /**
  * Webpack Plugins
@@ -166,6 +167,10 @@ module.exports = function (options) {
      * See: https://webpack.js.org/configuration/plugins/
      */
     plugins: [
+        new webpack.ProvidePlugin({
+            _: 'lodash',
+            Quill: 'quill'
+        }),
       /**
        * Plugin: DefinePlugin
        * Description: Define free variables.

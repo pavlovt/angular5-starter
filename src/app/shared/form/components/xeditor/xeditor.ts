@@ -1,14 +1,13 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ChangeDetectorRef } from '@angular/core';
 import * as _ from 'lodash';
-
+// import {Quill} from "quill";
 @Component({
-    selector: 'xinput',
-    styleUrls: ['./xinput.scss'],
-    templateUrl: './xinput.html',
-    encapsulation: ViewEncapsulation.None
+    selector: 'xeditor',
+    styleUrls: ['./xeditor.scss'],
+    templateUrl: './xeditor.html'
 })
-export class XInput implements OnInit {
-
+export class XEditor implements OnInit {
+    text: string;
     ctrl: any;
     @Input() name: string;
     @Input() label: string = '';
@@ -19,6 +18,11 @@ export class XInput implements OnInit {
     @Input() labelClass = '';
     @Input() maxLenght: number = 9999;
     @Input() disabled: boolean = false;
+
+    constructor(
+        private el: ElementRef,
+        // private change: ChangeDetectorRef,
+    ) { }
 
     ngOnInit() {
         this.id = this.id || 'form-' + this.name;

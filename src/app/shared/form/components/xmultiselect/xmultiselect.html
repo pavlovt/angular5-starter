@@ -1,6 +1,6 @@
 <div class='input-text' [formGroup]='form.getForm()'>
   <label for='{{id}}' class='{{labelClass}}'>{{label}}</label>
-  <input [type]='type' [id]='id' [name]='name' pInputText [formControlName]='name' placeholder='{{placeholder}}' [maxlength]='maxLenght'>
+  <p-multiSelect [options]='cities' [(ngModel)]='selectedCities' [id]='id' [formControlName]='name'></p-multiSelect>
   <div *ngIf='(ctrl.touched || form.submitted) && form.hasError(name)' class='alert alert-danger'>
     {{form.getError(name)}}
   </div>
