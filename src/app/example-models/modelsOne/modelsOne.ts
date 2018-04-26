@@ -38,7 +38,7 @@ export class ModelsOne implements OnInit {
       'date': 'required',
       'select': 'required',
       'password': 'required|rangeLength:6,30',
-      'mask': 'required|rangeLength:2,15',
+      'mask': 'required|rangeLength:4,6',
       'auto': 'required',
       'dropdown': 'required',
       'xradio': 'required',

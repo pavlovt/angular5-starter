@@ -8,6 +8,9 @@
     .ui-autocomplete-input {
    border: 1px solid #7f7f7f;
    border-radius: 0;
+   &:focus {
+     border:none;
+   }
  }
 }
   .ui-inputtext {
