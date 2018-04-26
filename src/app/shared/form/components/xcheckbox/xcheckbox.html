@@ -1,5 +1,5 @@
 <div class='form-group' [formGroup]='form.getForm()' id='xcheckbox-custom'>
-  <p-checkbox label='Subscriber' class='form-control' id='{{id}}' name='{{name}}' [formControlName]='name'></p-checkbox>
+  <p-checkbox label='{{label}}' class='form-control' id='{{id}}' name='{{name}}' [formControlName]='name'></p-checkbox>
   <div *ngIf='(ctrl.touched || form.submitted) && form.hasError(name)' class='alert alert-danger'>
     {{form.getError(name)}}
   </div>

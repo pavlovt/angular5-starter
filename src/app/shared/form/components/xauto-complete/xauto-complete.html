@@ -6,8 +6,7 @@
         [suggestions]="filteredData" 
         (completeMethod)="filterData($event)" 
         [placeholder]
-        [formControlName]="name"
-        dropdown="showDropdown">
+        [formControlName]="name">
     </p-autoComplete>
    
     <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger pull-right">
