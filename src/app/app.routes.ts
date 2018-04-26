@@ -10,6 +10,5 @@ export const ROUTES: Routes = [
   { path: 'home',  component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'modelsOne',  component: ModelsOne },
-  { path: 'modelsTwo', component: ModelsTwo },
   { path: '**',    component: NoContentComponent },
 ];

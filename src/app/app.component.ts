@@ -31,10 +31,6 @@ import { AppState } from './app.service';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         Test Form
       </a>
-      <a [routerLink]=" ['./modelsTwo'] "
-        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
-        Models 2
-      </a>
     </nav>
 
     <main>

@@ -27,7 +27,6 @@ import { HtmlOutlet } from "app/home/outlet";
 import "../styles/styles.scss";
 import "../styles/headings.css";
 import { ModelsOne } from './example-models/modelsOne/modelsOne';
-import { ModelsTwo } from './example-models/modelsTwo/modelsTwo';
 
 // Application wide providers
 const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, AppState];
@@ -51,8 +50,7 @@ interface StoreType {
     XLargeDirective,
     ZzzComponent,
     HtmlOutlet,
-    ModelsOne,
-    ModelsTwo
+    ModelsOne
   ],
   /**
    * Import Angular's modules.
