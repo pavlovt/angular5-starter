@@ -53,12 +53,11 @@ p-calendar {
   }
 }
 
-.form-group{
-.ui-inputtext ~ .ui-calendar-button:focus {
+.ui-inputtext + .ui-calendar-button:focus {
   border-color: #ace153;
   -moz-box-shadow: 0px 0px 5px #ace153;
   -webkit-box-shadow: 0px 0px 5px #ace153;
   box-shadow: 0px 0px 5px #ace153;
 }
-}
+
 
