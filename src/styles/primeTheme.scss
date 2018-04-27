@@ -748,7 +748,7 @@ p-multiselect.ng-dirty.ng-invalid > .ui-multiselect,
 p-spinner.ng-dirty.ng-invalid > .ui-inputtext,
 p-selectbutton.ng-dirty.ng-invalid .ui-button,
 p-togglebutton.ng-dirty.ng-invalid .ui-button {
-    border-bottom-color: $invalidInputBorderColor;
+    border-color: $invalidInputBorderColor;
 }
 
 /* Cornering */
