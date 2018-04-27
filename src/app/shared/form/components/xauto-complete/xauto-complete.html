@@ -1,15 +1,11 @@
-<div class="custom-autocomplete"  [formGroup]="form.getForm()">
+<div class="custom-autocomplete" [formGroup]="form.getForm()">
     <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
-    <p-autoComplete 
-        pInputText 
-        [type]="type" 
-        [suggestions]="filteredData" 
-        (completeMethod)="filterData($event)" 
-        [placeholder]
+    <p-autoComplete pInputText [type]="type" [suggestions]="filteredData" (completeMethod)="filterData($event)" [placeholder]
         [formControlName]="name">
     </p-autoComplete>
-   
-    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger pull-right">
+    <div class="error-place">
+        <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
             {{form.getError(name)}}
         </div>
+    </div>
 </div>

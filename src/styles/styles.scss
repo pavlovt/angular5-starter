@@ -56,4 +56,13 @@ input {
 
 .ui-inputtext {
   width: 100%;
+  &:focus {
+    border:none;
+  }
 }
+
+.error-place {
+  height: 15px;
+  margin: 2px;
+}
+

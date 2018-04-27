@@ -1,15 +1,10 @@
 <div [formGroup]="form.getForm()">
-        <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
-    <p-inputMask 
-        class="input-mask"
-        [id]="id" 
-        [name]="name"  
-        [formControlName]="name" 
-        [mask]="maskTypes[mask].maskType"
-        [placeholder]="maskTypes[mask].maskType" 
-       >
+    <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
+    <p-inputMask class="input-mask" [id]="id" [name]="name" [formControlName]="name" [mask]="maskTypes[mask].maskType" [placeholder]="maskTypes[mask].maskType">
     </p-inputMask>
-    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)"  class="alert alert-danger">
+    <div class="error-place">
+        <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
             {{form.getError(name)}}
         </div>
+    </div>
 </div>

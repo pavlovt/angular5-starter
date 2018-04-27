@@ -2,7 +2,9 @@
     <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
     <p-radioButton [id]="id" [name]="name" [disabled]="isDisabled" [formControlName]="name">
     </p-radioButton>
-    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
-        {{form.getError(name)}}
+    <div class="error-place">
+        <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
+            {{form.getError(name)}}
+        </div>
     </div>
 </div>

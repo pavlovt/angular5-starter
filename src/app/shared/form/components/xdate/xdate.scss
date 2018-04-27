@@ -4,43 +4,61 @@ p-calendar {
     padding-left: 1px;
     padding-right: 1px;
     th {
-        background: #d9d9d9;
-        font-weight: 100;
+      background: #d9d9d9;
+      font-weight: 100;
     }
     .ui-corner-all {
-        border-radius: 0px;
+      border-radius: 0px;
     }
     .ui-state-active {
-        background: #ace153;
+      background: #ace153;
     }
   }
 
-    .ui-datepicker td span, .ui-datepicker td a {
-      border: none;
-      padding-top: 5px;
-      width: 23px;
-      height: 23px;
-      text-align: center;
-      &:hover {
-        background-color: #d9d9d9 !important;
-      }
-      &:active {
-        background-color: #ace153 !important;
-      }
+  .ui-datepicker td span,
+  .ui-datepicker td a {
+    border: none;
+    padding-top: 5px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    &:hover {
+      background-color: #d9d9d9 !important;
     }
-
-    .ui-calendar.ui-calendar-w-btn input {
-      border-right: 0;
+    &:active {
+      background-color: #ace153 !important;
     }
+  }
 
-    .ui-calendar .ui-calendar-button {
-      margin-top: 1.4px;
-      height: 23px;
+  .ui-calendar.ui-calendar-w-btn input {
+    border-right: 0;
+  }
+
+  .ui-calendar .ui-calendar-button {
+    margin-top: 1.4px;
+    height: 23px;
+    // &:focus {
+    //   border-color: #ace153;
+    //   -moz-box-shadow: 0px 0px 5px #ace153;
+    //   -webkit-box-shadow: 0px 0px 5px #ace153;
+    //   box-shadow: 0px 0px 5px #ace153;
+    // }
+    &:invalid {
+      border-color: red;
     }
+  }
 
-   
-    
-    .ui-calendar {
-      width: 98%;
+  .ui-calendar {
+    width: 98%;
   }
 }
+
+.form-group{
+.ui-inputtext ~ .ui-calendar-button:focus {
+  border-color: #ace153;
+  -moz-box-shadow: 0px 0px 5px #ace153;
+  -webkit-box-shadow: 0px 0px 5px #ace153;
+  box-shadow: 0px 0px 5px #ace153;
+}
+}
+

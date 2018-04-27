@@ -1,16 +1,11 @@
 <div [formGroup]="form.getForm()">
     <label for="{{id}}" class="{{labelClass}}">{{label}}</label>
-    <p-dropdown  
-        class="dropdown" 
-        [id]="id"
-        [name]="name" 
-        [options]="data" 
-        [placeholder]="placeholder"  
-        [autoDisplayFirst]="displayFirst" 
-        [disabled]="disabled"
-        >
+    <p-dropdown class="dropdown" [id]="id" [name]="name" [options]="data" [placeholder]="placeholder" [autoDisplayFirst]="displayFirst"
+        [disabled]="disabled">
     </p-dropdown>
-    <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
-        {{form.getError(name)}}
+    <div class="error-place">
+        <div *ngIf="(ctrl.touched || form.submitted) && form.hasError(name)" class="alert alert-danger">
+            {{form.getError(name)}}
+        </div>
     </div>
 </div>
