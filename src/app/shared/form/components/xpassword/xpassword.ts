@@ -12,7 +12,7 @@ export class XPassword implements OnInit {
   @Input() name: string;
   @Input() label: string = "";
   @Input() placeholder: string = "";
-  @Input() type: string = "text";
+  @Input() type: string = "password";
   @Input() id: string;
   @Input() form: any = {};
   @Input() labelClass = "";

@@ -2,19 +2,19 @@
 <div class='container'>
   <h3>Test Form</h3>
   <form [formGroup]='form.getForm()'>
-    <xinput name='name' label='Name' [form]='form' placeholder="Name"></xinput>
-    <xinput name='email' label='Email' [form]='form' placeholder="Email"></xinput>
-    <xpassword name="password" label="Password" [form]="form" placeholder="Password"></xpassword>
-    <xmask name="mask" label="Phone" [form]="form" mask="phone"></xmask>
-    <xarea name='text' label='Text' [form]='form' placeholder="Add note..."></xarea>
-    <xdropdown name="dropdown" placeholder="select" label="Country" [displayFirst]="false" [data]="arr" [form]="form"></xdropdown>
+    <xinput name='name' label='Name' [form]='form' placeholder='Name'></xinput>
+    <xinput name='email' label='Email' [form]='form' placeholder='Email'></xinput>
+    <xpassword name='password' label='Password' [form]='form' placeholder='Password'></xpassword>
+    <xmask name='mask' label='Phone' [form]='form' mask='phone'></xmask>
+    <xarea name='text' label='Text' [form]='form' placeholder='Add note...'></xarea>
+    <xdropdown name='dropdown' placeholder='select' label='Country' [displayFirst]='false' [data]='arr' [form]='form'></xdropdown>
     <xmultiselect name='select' label='City' [form]='form'></xmultiselect>
-    <xauto-complete name="auto" showDropdown="true" label="Make" [data]="data" [form]="form" [placeholder]="placeholder"></xauto-complete>
+    <xauto-complete name='auto' showDropdown='true' label='Make' [data]='data' [form]='form' [placeholder]='placeholder'></xauto-complete>
     <xcheckbox name='checkbox' label='Subscribe' [form]='form'></xcheckbox>
-    <xradio-button name="xradio" label="Option 1" [form]="form"></xradio-button>
-    <xradio-button name="xradio" label="Option 2" [form]="form"></xradio-button>
+    <xradio-button name='xradio' label='Option 1' [form]='form'></xradio-button>
+    <xradio-button name='xradio' label='Option 2' [form]='form'></xradio-button>
     <xdate name='date' [form]='form'></xdate>
-    <xnum-input name="xnumInput" [min]="0" [max]="5" [step]="0.25" [form]="form"></xnum-input>
+    <xnum-input name='xnumInput' [min]='0' [max]='5' [step]='0.25' [form]='form'></xnum-input>
     <xeditor></xeditor>
     <button pButton type='submit' label='Save' class='ui-button-primary'></button>
     <button pButton type='button' label='Cancel' class='ui-button-secondary'></button>
