@@ -4,6 +4,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { environment } from 'environments/environment';
 import { AppState } from './app.service';
+// import txt from './tst.ehtml';
+// console.log('txt', txt);
 
 /**
  * App Component

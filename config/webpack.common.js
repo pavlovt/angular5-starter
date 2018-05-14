@@ -141,6 +141,15 @@ module.exports = function (options) {
           exclude: [helpers.root('src/index.html')]
         },
 
+        {
+            test: /\.ehtml$/,
+            use: [
+                {
+                    loader: "easy-html-webpack-plugin"
+                }
+            ]
+        },
+
         /**
          * File loader for supporting images, for example, in CSS files.
          */
