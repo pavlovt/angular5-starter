@@ -3,7 +3,7 @@
  */
 
 const helpers = require('./helpers');
-
+const macros = require('../src/app/shared/easy-html-macros');
 /**
  * Webpack Plugins
  *
@@ -143,10 +143,18 @@ module.exports = function (options) {
 
         {
             test: /\.ehtml$/,
+            // use: ['raw-loader', 'easy-html'],
             use: [
-                {
-                    loader: "easy-html-webpack-plugin"
-                }
+              {
+                  loader: "raw-loader"
+              },
+              {
+                  loader: "easy-html",
+                  options: {
+                    z: 'zzz',
+                    macros: macros,
+                  }
+              }
             ]
         },
 
