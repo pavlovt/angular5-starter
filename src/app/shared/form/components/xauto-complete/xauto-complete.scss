@@ -1,19 +1,22 @@
 .custom-autocomplete {
   .ui-autocomplete { 
     width: 100%;
+    display: inline-flex;
     .ui-autocomplete-dropdown {
       height: 24px;
+      width: 1.5em;
       border-radius: 0;
     }
-    .ui-autocomplete-input {
-   border: 1px solid #7f7f7f;
-   border-radius: 0;
-   &:focus {
-     border:none;
-   }
- }
-}
-  .ui-inputtext {
-    border: none;
+//     .ui-autocomplete-input {
+//    border: 1px solid #7f7f7f;
+//    border-radius: 0;
+//    &:focus {
+//      border:none;
+//    }
+//  }
+    .ui-state-highlight {
+      background-color: #ace153;
+    }
+
   }
 }

@@ -18,7 +18,7 @@ export class XAutoComplete {
   @Input() filteredData: any[];
   @Input() form: any = {};
   @Input() labelClass: string = "";
- @Input() showDropdown:boolean = false;
+  @Input() showDropdown: boolean = false;
 
   ngOnInit() {
     this.id = this.id || "form-" + this.name;
