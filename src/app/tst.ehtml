@@ -1,5 +1,5 @@
-div.row {
-    div.col {
+.row {
+    .col {
         form :submit=submit() {
             !input e-type=number e-v-model=zzz label="qq" l-class="lc" w-class="wc" e-class="ec" e-name="zzz" {
                 !input e-type=number e-v-model=zzz label="qq" l-class="lc" w-class="wc" e-class="ec" e-name="zzz" {
@@ -7,13 +7,13 @@ div.row {
                 }
             }
 
-            select.tst-z v-model=choose {
+            select.tst-z [(*ngModel)] {
                 option v-for="v in options" :value="v.id" {
                     'title: {{v.title}}'
                 }
             }
 
-            button.btn.btn-primary { 'Submitz' }
+            button.btn.btn-primary { 'Submit' }
         }
     }
 }

@@ -144,10 +144,7 @@ module.exports = function (options) {
         {
             test: /\.ehtml$/,
             // use: ['raw-loader', 'easy-html'],
-            use: [
-              {
-                  loader: "raw-loader"
-              },
+            use: ['raw-loader',
               {
                   loader: "easy-html",
                   options: {

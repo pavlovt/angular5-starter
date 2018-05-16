@@ -4,8 +4,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { environment } from 'environments/environment';
 import { AppState } from './app.service';
-const txt = require('./tst.ehtml');
-console.log('txt1', txt);
 
 /**
  * App Component
@@ -38,12 +36,6 @@ console.log('txt1', txt);
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
     <footer>
-      <span>Angular Starter by <a [href]="twitter">@gdi2290</a></span>
-      <div>
-        <a [href]="url">
-          <img [src]="tipe" width="25%">
-        </a>
-      </div>
     </footer>
   `
 })

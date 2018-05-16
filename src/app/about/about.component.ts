@@ -3,10 +3,13 @@ import { ActivatedRoute } from "@angular/router";
 import { SelectItem } from "primeng/api";
 import { SelectItemGroup } from "primeng/api";
 
+const txt = require('./about.component.ehtml');
+console.log('txt1', txt);
+
 @Component({
   selector: "about",
   styles: [],
-  templateUrl: "./about.component.html"
+  templateUrl: "./about.component.ehtml"
 })
 export class AboutComponent implements OnInit {
   countries: SelectItem[];
