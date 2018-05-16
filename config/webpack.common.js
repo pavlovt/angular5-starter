@@ -151,7 +151,6 @@ module.exports = function (options) {
               {
                   loader: "easy-html",
                   options: {
-                    z: 'zzz',
                     macros: macros,
                   }
               }
