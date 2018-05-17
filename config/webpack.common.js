@@ -142,16 +142,16 @@ module.exports = function (options) {
         },
 
         {
-            test: /\.ehtml$/,
-            // use: ['raw-loader', 'easy-html'],
-            use: ['raw-loader',
-              {
-                  loader: "easy-html",
-                  options: {
-                    macros: macros,
-                  }
+          test: /\.ehtml$/,
+          // use: ['raw-loader', 'easy-html'],
+          use: ['raw-loader',
+            {
+              loader: "easy-html-webpack-loader",
+              options: {
+                macros: macros,
               }
-            ]
+            }
+          ]
         },
 
         /**

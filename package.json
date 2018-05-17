@@ -1,18 +1,8 @@
 {
-  "name": "angular-starter",
-  "version": "7.5.0",
+  "name": "Allscript",
+  "version": "0.0.1",
   "description": "An Angular Webpack Starter kit featuring Angular (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by Tipe.io",
-  "keywords": [
-    "angular",
-    "angular2",
-    "angular4",
-    "angular5",
-    "webpack",
-    "typescript",
-    "tipe",
-    "tipe.io"
-  ],
-  "author": "Patrick Stapleton <patrick@tipe.io>",
+  "keywords": ["angular5","webpack","typescript"],
   "homepage": "https://github.com/gdi2290/angular-starter",
   "license": "MIT",
   "scripts": {
@@ -96,7 +86,7 @@
     "@angular/router": "^5.2.9",
     "alertifyjs": "^1.11.1",
     "core-js": "^2.5.4",
-    "easy-html": "^0.9.0",
+    "easy-html-webpack-loader": "^1.0.0",
     "font-awesome": "^4.7.0",
     "http-server": "^0.11.1",
     "ie-shim": "^0.1.0",
